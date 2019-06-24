@@ -145,9 +145,8 @@ const stateObjValue, setStateObjValue = useState(initialValue);
 ```javascript
 import React, { useState } from "react";
 
-const stateObjValue, setStateObjValue = useState(initialValue);
+const [stateObjValue, setStateObjValue] = useState(initialValue);
 // curr value -⬆️
-
 ```
 
 ---
@@ -157,7 +156,7 @@ const stateObjValue, setStateObjValue = useState(initialValue);
 ```javascript
 import React, { useState } from "react";
 
-const stateObjValue, setStateObjValue = useState(initialValue);
+const [stateObjValue, setStateObjValue] = useState(initialValue);
 // function to update value ---⬆️
 ```
 
@@ -168,7 +167,7 @@ const stateObjValue, setStateObjValue = useState(initialValue);
 ```javascript
 import React, { useState } from "react";
 
-const stateObjValue, setStateObjValue = useState(initialValue);
+const [stateObjValue, setStateObjValue] = useState(initialValue);
 // React library function -----------------⬆️
 ```
 
@@ -179,7 +178,7 @@ const stateObjValue, setStateObjValue = useState(initialValue);
 ```javascript
 import React, { useState } from "react";
 
-const stateObjValue, setStateObjValue = useState(initialValue);
+const [stateObjValue, setStateObjValue] = useState(initialValue);
 // the initial value, can be anything ----------------⬆️
 ```
 
@@ -294,7 +293,7 @@ import React, { useEffect } from "react";
 // in the top level scope of your function component:
 useEffect(() => {
   // will only fire when `foo` or `bar` change
-, [foo, bar]};
+}, [foo, bar]);
 ```
 
 ---
@@ -307,7 +306,7 @@ import React, { useEffect } from "react";
 // in the top level scope of your function component:
 useEffect(() => {
   // will only fire on component mount
-, []};
+}, []);
 ```
 
 ---
